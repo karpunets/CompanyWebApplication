@@ -1,0 +1,41 @@
+<div id="dialogAddTaskExample">
+    <div class="dialogAddTask" title="Add task">
+        <div class="dialogContentAddTask">
+            <form method="post" class="ajax_form_add_task" action="">
+                <span>Description:</span>
+                <textarea class="taskDescription"></textarea>
+                <span>The date of the starting</span>
+                <input type="text" name="startingDate" class="taskDatepickerStart"/>
+                <span>Estimate</span>
+                <div><input type="text" name="estimate" class="taskSpinner"/><span class="hourLabel">hour(s)</span></div>
+                <span>Qualification</span>
+                <div class="taskSelectQualification">
+                    <select name="taskQualification" class="taskQualification">
+                        <option disabled selected>Please pick qualification</option>
+                        <c:forEach var="qualification" items="${requestScope.qualifications}">
+                            <option>${qualification}</option>
+                        </c:forEach>
+                    </select>
+                </div>
+
+                <span>Employee(s):</span>
+                <input class="taskEmployeesInput"/>
+                <ul class="taskEmployees" data-parent="employees"></ul>
+
+                <span>Subtask(s):</span>
+                <div class="addSubTask">
+                    <button type="button" class="addSubtask">Add subtask</button>
+                </div>
+                <ul class="subtasks" data-parent="subtasks"></ul>
+
+                <span>Dependency(ies):</span>
+                <input type="number" class="taskDependenciesInput"/>
+                <ul class="taskDependencies" data-parent="dependencies"></ul>
+
+                <div class="addTask">
+                    <button type="submit" class="buttonAddTask">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

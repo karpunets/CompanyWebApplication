@@ -1,0 +1,121 @@
+.content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.information_content {
+    margin-top: 20px;
+    /*margin-bottom: 40px;*/
+}
+
+.avatar_content {
+    margin-right: 100px;
+}
+
+.avatar_img_wrapper {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: cover;
+    /*overflow: hidden;*/
+    /*position: relative;*/
+}
+
+.avatar_img_wrapper img {
+    height: 100%;
+    width: 100%;
+    /*position: absolute;*/
+    /*left: -25%;*/
+}
+
+.information_name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.information_name span {
+    font-weight: bold;
+}
+
+.avatar_btn_wrapper {
+    text-align: center;
+}
+
+.avatar_btn_wrapper button {
+    width: 120px;
+}
+
+button {
+    background: #297ba4;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background .3s linear;
+    border-radius: 2px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+button:hover {
+    background: #23404e;
+}
+
+.information_btn_edit, .information_btn_edit_account {
+    margin: 20px auto;
+    width: 250px;
+}
+
+.upload_image {
+    text-align: center;
+}
+
+.upload_image input {
+    width: 100%;
+    outline: none;
+}
+
+.upload_image button, .edit_information button, .edit_information_account button {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.information_account_input, .information_input {
+    margin: 10px 0;
+    display: table-row;
+}
+
+.information_account_input input, .information_input input {
+    border: 1px solid #e4e4e4;
+    padding: 5px;
+    border-radius: 2px;
+    color: #333;
+    margin-left: 5px;
+    display: table-cell;
+    width: 350px;
+}
+
+.information_account_input label, .information_input label {
+    font-weight: bold;
+    display: table-cell;
+    white-space: nowrap;
+}
+
+#ui-id-3-button {
+    margin-bottom: 10px;
+}
+
+.information_input_account_btn, .information_input_btn {
+    text-align: center;
+}

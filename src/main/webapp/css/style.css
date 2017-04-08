@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: #e4e4e4;
+}
+
+header {
+    height: 70px;
+    background-color: rgba(153, 182, 195, 0.49);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 320px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+}
+
+.logo img {
+    margin: 0 15px;
+    height: 60px;
+}
+
+.logo a {
+    font-weight: bold;
+    color: #297ba4;
+    text-decoration: none;
+    transition: color .3s linear;
+}
+
+.logo a:hover {
+    color: #23404e;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.logout img {
+    height: 40px;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.logout img:hover {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}

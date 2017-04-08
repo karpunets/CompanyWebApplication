@@ -1,0 +1,72 @@
+.content {
+    max-width: 400px;
+    width: 100%;
+    margin: 100px auto 0
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.enter {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333
+}
+
+.text {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: #828282;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.remember {
+    cursor: pointer;
+}
+
+.checkbox {
+    margin: 0 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #297ba4;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+
+button:hover {
+    background: #0f3144;
+}
+
+#message {
+    padding: 15px;
+    color: firebrick;
+    margin: 0 auto;
+    transition: color 3s linear;
+}
